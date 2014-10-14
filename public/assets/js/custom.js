@@ -7,7 +7,7 @@
 "use strict";
 
 $(document).ready(function(){
-
+	
 	//===== Sidebar Search (Demo Only) =====//
 	$('.sidebar-search').submit(function (e) {
 		//e.preventDefault(); // Prevent form submitting (browser redirect)
@@ -44,29 +44,4 @@ $(document).ready(function(){
 		zeroAxis: false,
 		barColor: App.getLayoutColorCode('green')
 	});
-
-	//===== Refresh-Button on Widgets =====//
-
-	$('.widget .toolbar .widget-refresh').click(function() {
-		var el = $(this).parents('.widget');
-
-		App.blockUI(el);
-		window.setTimeout(function () {
-			App.unblockUI(el);
-			noty({
-				text: '<strong>Widget updated.</strong>',
-				type: 'success',
-				timeout: 1000
-			});
-		}, 1000);
-	});
-
-	//===== Fade In Notification (Demo Only) =====//
-	setTimeout(function() {
-		$('#sidebar .notifications.demo-slide-in > li:eq(1)').slideDown(500);
-	}, 3500);
-
-	setTimeout(function() {
-		$('#sidebar .notifications.demo-slide-in > li:eq(0)').slideDown(500);
-	}, 7000);
 });

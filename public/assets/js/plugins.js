@@ -294,7 +294,7 @@ var Plugins = function() {
 								"xls",
 								"pdf"
 							],
-							"sSwfPath": "plugins/datatables/tabletools/swf/copy_csv_xls_pdf.swf"
+							"sSwfPath": "/plugins/datatables/tabletools/swf/copy_csv_xls_pdf.swf"
 						}
 					});
 				}

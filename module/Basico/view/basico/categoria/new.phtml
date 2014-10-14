@@ -1,0 +1,59 @@
+<script src="/assets/js/app/basico/categoria/new.js"></script>	
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="widget box" style="margin-bottom: 0;">
+				<!-- <div class="widget-header">
+					<h4><i class="icon-reorder"></i> Nova Categoria</h4>
+				</div>  -->
+				<div class="widget-content">
+					<form class="form-horizontal row-border" id="FrmCategoria" action="#">
+					
+                        <div class="form-group">
+							<label class="col-md-3 control-label">Tipo <span class="required">*</span></label>
+							<div class="col-md-9">
+								<label class="radio"><input type="radio" name="tipo" class="uniform required"> Receita</label>
+								<label class="radio"><input type="radio" name="tipo" class="uniform required"> Despesa</label>
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label class="col-md-3 control-label">Categoria Pai </label>
+							<div class="col-md-9">
+								<select name="CategoriaPai" id="CategoriaPai" class="select2">
+								    <option></option>
+								    <option>Moradia</option>
+								    <option>&nbsp;&nbsp;Água</option>
+								    <option>&nbsp;&nbsp;Luz</option>
+								    <option>Salário</option>
+								    <option>&nbsp;&nbsp;Mensal</option>
+								    <option>&nbsp;&nbsp;Hora Extra</option>
+								</select>
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label class="col-md-3 control-label">Categoria <span class="required">*</span></label>
+							<div class="col-md-9">
+								<input type="text" name="req1" class="form-control required">
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label class="col-md-3 control-label">Ativa <span class="required">*</span></label>
+							<div class="col-md-9">
+								<label class="radio"><input type="radio" name="ativa" class="uniform required" checked="checked"> Sim</label>
+								<label class="radio"><input type="radio" name="ativa" class="uniform required"> Não</label>
+							</div>
+						</div>
+						<div class="form-actions">
+							<input type="submit" value="Salvar" class="btn btn-success pull-right">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	
